@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist de Selección y Evaluación de Revistas Científicas</title>
+  <!-- Google Fonts: Poppins e Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-container">
+      <div>
+        <h1>Evaluación y Selección de Revistas Científicas</h1>
+        <p>Herramienta interactiva para la verificación de calidad, indexación e identificación de riesgos de depredación (Zenodo 10688081).</p>
+      </div>
+      <span class="badge">Guía Académica</span>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- PASO 1: Elección de Flujo -->
+    <section class="card" id="step-1">
+      <div class="card-title">
+        <div class="card-icon">1</div>
+        <h2>¿Ya tienes una revista objetivo en mente?</h2>
+      </div>
+      <p>Selecciona una opción para guiarte en el proceso de verificación o en la búsqueda de la revista adecuada para tu manuscrito.</p>
+      
+      <div class="choice-group">
+        <label class="radio-card" id="opt-yes">
+          <input type="radio" name="has_journal" value="yes">
+          <div>
+            <strong>Sí, ya tengo una revista elegida</strong>
+            <p>Quiero comprobar si es legítima, su índice de impacto y evaluar posibles riesgos de prácticas dudosas/secuestro.</p>
+          </div>
+        </label>
+        
+        <label class="radio-card" id="opt-no">
+          <input type="radio" name="has_journal" value="no">
+          <div>
+            <strong>No, aún no sé dónde publicar</strong>
+            <p>Necesito recursos para encontrar revistas acordes a la temática de mi trabajo y los requisitos de mis financiadores.</p>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <!-- OPCIÓN NO: Recursos de búsqueda y políticas de manuscrito -->
+    <section class="card hidden" id="section-resources">
+      <div class="card-title">
+        <div class="card-icon" style="background-color: var(--blue-dark);">?</div>
+        <h2>Recursos y Orientación para Elegir Revista</h2>
+      </div>
+      
+      <div class="alert alert-warning">
+        <strong>¡Recordatorio Importante!</strong><br>
+        Siempre debes revisar con detenimiento el <strong>Scope (Alcance y Objetivos)</strong> en la web oficial de la revista antes de enviar tu trabajo.<br>
+        Si cuentas con <strong>financiación pública o privada</strong>, verifica las políticas de acceso abierto exigidas por tu entidad financiadora (licencias CC-BY, periodos de embargo, depósitos en repositorios).
+      </div>
+
+      <div class="grid-2">
+        <div class="resource-box">
+          <h3>Buscadores Sugeridos de Revistas</h3>
+          <p>Herramientas automáticas mediante título y resumen:</p>
+          <ul>
+            <li><a href="https://journalfinder.elsevier.com/" target="_blank" rel="noopener">Elsevier Journal Finder</a></li>
+            <li><a href="https://journalsuggester.springer.com/" target="_blank" rel="noopener">Springer Nature Journal Suggester</a></li>
+            <li><a href="https://matchmaker.journalfinder.clarivate.com/" target="_blank" rel="noopener">Web of Science Manuscript Matcher</a></li>
+            <li><a href="https://journalfinder.wiley.com/" target="_blank" rel="noopener">Wiley Journal Finder</a></li>
+            <li><a href="https://doaj.org/" target="_blank" rel="noopener">DOAJ (Directory of Open Access Journals)</a></li>
+          </ul>
+        </div>
+        
+        <div class="resource-box">
+          <h3>Comprobación de Derechos y Autoarchivo</h3>
+          <p>Consulta qué versión de tu trabajo puedes publicar o depositar:</p>
+          <ul>
+            <li><a href="https://v2.sherpa.ac.uk/opendoar/" target="_blank" rel="noopener">Sherpa Romeo</a> (Políticas de copyright y autoarchivo)</li>
+            <li><a href="https://journalcheckertool.org/" target="_blank" rel="noopener">Journal Checker Tool</a> (Cumplimiento de Plan S / Financiadores)</li>
+            <li><a href="https://dulcinea.fecyt.es/" target="_blank" rel="noopener">Dulcinea</a> (Derechos de copyright de revistas españolas)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPCIÓN SÍ: Checklist e Indicadores de Riesgo -->
+    <div id="section-checklist" class="hidden">
+      
+      <!-- Índices Oficiales -->
+      <section class="card">
+        <div class="card-title">
+          <div class="card-icon">2</div>
+          <h2>Verificación en Índices y Bases de Datos Oficiales</h2>
+        </div>
+        <p>Compara la información oficial de la revista directamente en los portales indexadores principales:</p>
+        
+        <div class="link-bar">
+          <a href="https://mjl.clarivate.com/home" target="_blank" rel="noopener" class="link-pill">Master Journal List (WoS)</a>
+          <a href="https://jcr.clarivate.com/" target="_blank" rel="noopener" class="link-pill">Journal Citation Reports (JCR)</a>
+          <a href="https://www.scopus.com/sources" target="_blank" rel="noopener" class="link-pill">Scopus Preview</a>
+          <a href="https://dialnet.unirioja.es/" target="_blank" rel="noopener" class="link-pill">Dialnet</a>
+          <a href="http://miar.ub.edu/" target="_blank" rel="noopener" class="link-pill">MIAR (UB)</a>
+          <a href="https://doaj.org/" target="_blank" rel="noopener" class="link-pill">DOAJ</a>
+        </div>
+
+        <div class="checklist">
+          <label class="check-item">
+            <input type="checkbox" data-score="2" class="chk-item">
+            <div class="check-item-content">
+              <span>La revista está indexada en Master Journal List / JCR / Scopus con su ISSN correcto.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-score="1" class="chk-item">
+            <div class="check-item-content">
+              <span>Aparece registrada en MIAR o Dialnet con información clara sobre su presencia en bases de datos.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-score="1" class="chk-item">
+            <div class="check-item-content">
+              <span>Si es Open Access, figura registrada formalmente en DOAJ.</span>
+            </div>
+          </label>
+        </div>
+      </section>
+
+      <!-- Evaluación Zenodo 10688081 -->
+      <section class="card">
+        <div class="card-title">
+          <div class="card-icon">3</div>
+          <h2>Valoración de Riesgos y Buenas Prácticas (Zenodo 10688081)</h2>
+        </div>
+        <p>Marca las comprobaciones que cumple la revista para evaluar la legitimidad del sitio y del equipo editorial:</p>
+
+        <div class="checklist">
+          <label class="check-item">
+            <input type="checkbox" data-score="2" class="chk-item">
+            <div class="check-item-content">
+              <span><strong>URL y Sitio Web Oficial:</strong> Has verificado que la URL es la oficial y no una clonada o engañosa (evitando revistas secuestradas / <em>hijacked journals</em>).</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-score="2" class="chk-item">
+            <div class="check-item-content">
+              <span><strong>Comité Editorial Transparente:</strong> El comité editorial indica nombres reales, afiliaciones institucionales verificables y expertos reconocidos en el área.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-score="2" class="chk-item">
+            <div class="check-item-content">
+              <span><strong>Proceso de Revisión por Pares Explicitado:</strong> Se detalla con claridad el tipo de peer-review (doble ciego, abierto, etc.) y los tiempos de evaluación son razonables (no inmediatos en 48-72h).</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-score="2" class="chk-item">
+            <div class="check-item-content">
+              <span><strong>Transparencia en Tasas (APCs):</strong> Si se cobran tasas por publicación, los costes se indican claramente de forma previa al envío.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-score="1" class="chk-item">
+            <div class="check-item-content">
+              <span><strong>Contacto y Entidad Editora:</strong> Se identifica claramente la editorial o sociedad científica responsable con dirección y datos de contacto reales.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-score="1" class="chk-item">
+            <div class="check-item-content">
+              <span><strong>Ausencia de Spam agresivo:</strong> No has recibido correos masivos no solicitados garantizando la publicación urgente de tu manuscrito.</span>
+            </div>
+          </label>
+        </div>
+      </section>
+
+      <!-- Panel de Resultado dinámico -->
+      <section class="card">
+        <h2>Dictamen de Evaluación</h2>
+        <div id="result-box" class="alert alert-info" style="margin-top: 15px;">
+          Por favor, marca las comprobaciones en las secciones superiores para calcular el nivel de confianza de la revista.
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Herramienta basada en las pautas de evaluación de revistas científicas y el Marco de Valoración de Riesgos (<a href="https://zenodo.org/records/10688081" target="_blank" rel="noopener">Zenodo 10688081</a>).</p>
+      <p>© Universitat Politècnica de València - Paleta de Color Institucional</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
